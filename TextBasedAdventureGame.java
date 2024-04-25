@@ -86,6 +86,17 @@ class TextBasedAdventureGame
                 else if(choice == 2)
                 {
                     System.out.println("You decide to leave. Goodbye!");
+                    System.out.println();
+                    System.out.println("If you want to exit, enter 'exit' otherwise enter 'play' or any word or letter to continue to play game again.");
+                    String exit = sc.next();
+                    if(exit.equalsIgnoreCase("Exit"))
+                    {
+                        gameover = true;
+                    }
+                    else
+                    {
+                        gameover = false;
+                    }
                 }
                 else
                 {
